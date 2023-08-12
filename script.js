@@ -6,6 +6,7 @@ let windDetials = document.getElementById("windDetials");
 let weatherCondition = document.querySelector(".weatherCondition");
 let invalid = document.querySelector(".invalid");
 let mainContainer = document.querySelector(".main-container");
+let searchButton = document.querySelector(".search");
 
 const apiKey = "9499969d7a5ec484fd1cbf0ea409dd6c";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric";
@@ -35,4 +36,8 @@ userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         func();
     }
+})
+
+searchButton.addEventListener("click", ()=>{
+    func();
 })
